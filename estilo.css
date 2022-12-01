@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+    height: 100vh;
+    background-image: url(img/velocimetro.jpg);
+    background-size: 1920px 1080px;
+
+}
+
+header {
+    text-align: center;
+    background-color: blue;
+    border: 3px white solid;
+    color: white;
+}
+
+/*----Formatação da classe div----*/
+
+.container {
+    height: 560px;
+    width: 1000px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*----Formatação da barra de navegação----*/
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+/*----Formatação dos indicadores de navegação----*/
+
+.bar {
+    background: rgba(175, 165, 185, .5);
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    transition: .3s;
+}
+
+.bar:hover{
+    background: rgba(175, 165, 185, 1);
+}
+
+/*---Oucutar a input radio---*/
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+/*----Formatação do tamanho da classe imagens----*/
+
+.imagem{
+    width: 16.6666666667%;
+    transition: 1s;
+}
+
+/*----Ajuste do tamanho de imagem---*/
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+/*---Transição de imagens---*/
+
+#imagem1:checked ~ .img1 {
+    margin-left: 0;    
+}
+
+#imagem2:checked ~ .img1 {
+    margin-left: -16.6666666667%;    
+}
+
+#imagem3:checked ~ .img1 {
+    margin-left: -33.3333333334%;    
+}
+
+#imagem4:checked ~ .img1 {
+    margin-left: -50%;    
+}
+
+#imagem5:checked ~ .img1 {
+    margin-left: -66.6666666668%;    
+}
+
+#imagem6:checked ~ .img1 {
+    margin-left: -83.3333333335%;    
+}
+
